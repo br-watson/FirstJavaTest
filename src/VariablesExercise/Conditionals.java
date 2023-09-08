@@ -30,58 +30,56 @@ public class Conditionals {
 //                System.out.println("Invalid colour");
 //        }
 
-//        System.out.println("Input a number between 1 and 12: ");
-//        int month = scanner.nextInt();
-//        switch (month) {
-//            case 1:
-//            case 2:
-//                System.out.println("Winter");
-//                break;
-//            case 3:
-//            case 4:
-//            case 5:
-//                System.out.println("Spring");
-//                break;
-//            case 6:
-//            case 7:
-//            case 8:
-//                System.out.println("Summer");
-//                break;
-//            case 9:
-//            case 10:
-//            case 11:
-//                System.out.println("Autumn");
-//                break;
-//            case 12:
-//                System.out.println("Winter");
-//                break;
-//            default:
-//                System.out.println("Invalid month");
-//        }
-
-        System.out.println("Input a number: ");
-        double num1 = scanner.nextDouble();
-        System.out.println("Input another number: ");
-        double num2 = scanner.nextDouble();
-        System.out.println("Input an operation: ");
-        String op = scanner.next();
-        System.out.print("Result: ");
-
-        switch (op) {
-            case "+":
-                System.out.println(num1 + num2);
+        System.out.println("Input a number between 1 and 12: ");
+        int month = scanner.nextInt();
+        switch (month) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Winter");
                 break;
-            case "-":
-                System.out.println(num1 - num2);
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Spring");
                 break;
-            case "*":
-                System.out.println(num1 * num2);
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Summer");
                 break;
-            case "/":
-                System.out.println(num1 / num2);
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Autumn");
                 break;
             default:
-                System.out.println("Invalid operation");
+                System.out.println("Invalid month");
         }
+
+//        System.out.println("Input a number: ");
+//        double num1 = scanner.nextDouble();
+//        System.out.println("Input another number: ");
+//        double num2 = scanner.nextDouble();
+//        System.out.println("Input an operation: ");
+//        String op = scanner.next();
+//        System.out.print("Result: ");
+//
+//        switch (op) {
+//            case "+":
+//                System.out.println(num1 + num2);
+//                break;
+//            case "-":
+//                System.out.println(num1 - num2);
+//                break;
+//            case "*":
+//                System.out.println(num1 * num2);
+//                break;
+//            case "/":
+//                System.out.println(num1 / num2);
+//                break;
+//            default:
+//                System.out.println("Invalid operation");
+//        }
     }
 }
