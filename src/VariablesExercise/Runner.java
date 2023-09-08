@@ -18,16 +18,22 @@ public class Runner {
 //        System.out.println(num3);
 //        System.out.println(++num3);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input Name: ");
-        String name = scanner.next();
-        System.out.println("Hello, " + name + "!\n");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Input Name: ");
+//        String name = scanner.next();
+//        System.out.println("Hello, " + name + "!\n");
+//
+//        System.out.print("Please input an integer:");
+//        int num1 = scanner.nextInt();
+//        System.out.print("Please input another integer:");
+//        int num2 = scanner.nextInt();
+//        System.out.println("Sum = " + (num1+num2));
 
-        System.out.print("Please input an integer:");
-        int num1 = scanner.nextInt();
-        System.out.print("Please input another integer:");
-        int num2 = scanner.nextInt();
-        System.out.println("Sum = " + (num1+num2));
+//        int x = 10;
+//        while (x > 0) {
+//            System.out.print(--x);
+//        }
+
 
 
     }
