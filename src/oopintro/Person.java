@@ -9,7 +9,8 @@ public class Person {
     public int weightKG;
     private static String latinName = "Homo Sapien";
 
-    public Person() { }
+    public Person() {
+    }
 
     public Person(String name, int age, String hairColour, double heightCM) {
         setName(name);
@@ -18,7 +19,7 @@ public class Person {
         setHeightCM(heightCM);
     }
 
-    public String introduce() {
+    public String toString() {
         return "Hello, my name is " + name + " and I am " + age + " years old. My hair colour is " + hairColour + " and I am " + heightCM + "cm tall.";
     }
 
