@@ -5,7 +5,6 @@ public class Runner {
         Person brad = new Person();
 
         System.out.println(brad.introduce());
-
         brad.setAge(23);
         brad.setHairColour("brown");
         brad.setName("Brad");
