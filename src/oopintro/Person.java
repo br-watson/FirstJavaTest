@@ -6,6 +6,17 @@ public class Person {
     private int age;
     private String hairColour;
     private double heightCM;
+    public int weightKG;
+    private static String latinName = "Homo Sapien";
+
+    public Person() { }
+
+    public Person(String name, int age, String hairColour, double heightCM) {
+        setName(name);
+        setAge(age);
+        setHairColour(hairColour);
+        setHeightCM(heightCM);
+    }
 
     public String introduce() {
         return "Hello, my name is " + name + " and I am " + age + " years old. My hair colour is " + hairColour + " and I am " + heightCM + "cm tall.";
@@ -44,6 +55,14 @@ public class Person {
 
     public void setHeightCM(double heightCM) {
         this.heightCM = heightCM;
+    }
+
+    public static String getLatinName() {
+        return latinName;
+    }
+
+    public static void setLatinName(String latinName) {
+        Person.latinName = latinName;
     }
 }
 
