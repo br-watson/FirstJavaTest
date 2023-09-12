@@ -17,8 +17,28 @@ public class Library {
         members.add(member);
     }
 
+    public void removeMember(LibraryMember member) {
+        members.remove(member);
+    }
+
+    public void removeMember(int id) {
+        LibraryMember member = getMember(id);
+        if (member != null)
+            removeMember(member);
+    }
+
     public void addBook(Book book) {
         books.add(book);
+    }
+
+    public void removeBook(Book book) {
+        books.remove(book);
+    }
+
+    public void removeBook(String title) {
+        Book book = getBook(title);
+        if (book != null)
+            removeBook(book);
     }
 
     public List<LibraryMember> getMembers() {
