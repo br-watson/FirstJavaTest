@@ -19,6 +19,14 @@ public class LibraryMember {
         books = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

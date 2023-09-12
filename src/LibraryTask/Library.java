@@ -1,5 +1,6 @@
 package LibraryTask;
 
+import java.lang.reflect.Member;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -24,6 +25,27 @@ public class Library {
         return members;
     }
 
+    public LibraryMember getMember(int id) {
+        for (LibraryMember member : members) {
+            if (member.getId() == id) {
+                return member;
+            }
+        }
+        System.out.println("Invalid ID given");
+        return null;
+    }
+
+    public Book getBook(String title) {
+        for (Book book : books) {
+            if (book.getTitle().equals(title)) {
+                return book;
+            }
+        }
+        System.out.println("Book not found");
+        return null;
+
+    }
+
     public List<Book> getBooks() {
         return books;
     }
@@ -38,24 +60,22 @@ public class Library {
     }
 
     public void checkoutBook(LibraryMember member, String title) {
-        Book book = null;
-        for (Book book1 : books) {
-            if (book1.getTitle().equals(title))
-                book = book1;
-        }
-        if (book != null) {
+        Book book = getBook(title);
+        if (book != null)
             checkoutBook(member, book);
-        } else {
-            System.out.println("Book not found");
-        }
     }
 
-    public void returnBook(LibraryMember member, Book book) {
-        if (!book.isCheckedOut()) {
-            System.out.println("Book is not checked out");
-        } else {
-            member.removeBook(book);
-            book.returnBook();
+    public void returnBook(LibraryMember member, String title) {
+        Book book = getBook(title);
+        if (book == null)
+            System.out.println("Invalid title.");
+        else {
+            if (!book.isCheckedOut()) {
+                System.out.println("Book is not checked out");
+            } else {
+                member.removeBook(book);
+                book.returnBook();
+            }
         }
     }
 }
