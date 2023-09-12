@@ -6,6 +6,7 @@ public class Runner {
         Car c = new Car(4, "Ferrari", 2, 2, true);
         Motorbike m = new Motorbike(2, "Honda", 2, 0, false);
         Plane p = new Plane(6, "Boeing", 150, 4, false);
+        Plane p2 = new Plane(6, "Airbus", 121, 5, false);
 
 //        System.out.println(c);
 //        System.out.println(m);
@@ -23,12 +24,18 @@ public class Runner {
         garage.addVehicle(c);
         garage.addVehicle(m);
         garage.addVehicle(p);
+        garage.addVehicle(p2);
+        System.out.println(garage.calculateTotalBill());
 //        System.out.println(garage.toString());
 //        garage.emptyGarage();
+//        System.out.println(garage.toString());
+//        garage.removeVehicle(m);
+//        System.out.println(garage.toString());
+//        garage.removeVehicleByID(2);
+//        System.out.println(garage.toString());
+//        System.out.println(garage.calculateTotalWorth());
         System.out.println(garage.toString());
-        garage.removeVehicle(m);
-        System.out.println(garage.toString());
-        garage.removeVehicleByID(2);
+        garage.removeVehiclesByType("Plane");
         System.out.println(garage.toString());
 
     }
