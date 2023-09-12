@@ -15,7 +15,7 @@ public class Vehicle {
 
     public String toString() {
         return "noOfWheels=" + noOfWheels +
-                ", name='" + brandName + '\'' +
+                ", brandName='" + brandName + '\'' +
                 ", noOfSeats=" + noOfSeats +
                 ", noOfDoors=" + noOfDoors + ", ";
     }
