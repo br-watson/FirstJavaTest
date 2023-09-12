@@ -8,18 +8,18 @@ public class Runner {
 
         System.out.println(library.getMembers());
 
-        library.addBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925));
-        library.addBook(new Book("War and Peace", "Leo Tolstoy", 1869));
-        library.addBook(new Book("The Catcher in the Rye", "J. D. Salinger", 1951));
+        library.addBook(new Book("Book 1", "Author 1", 1925));
+        library.addBook(new Book("Book 2", "Author 2", 1869));
+        library.addBook(new Book("Book 3", "Author 3", 1951));
 
         System.out.println(library.getBooks());
-        System.out.println(library.getBook("The Catcher in the Rye"));
+        System.out.println(library.getBook("Book 3"));
         System.out.println(library.getMember(1));
 
-        library.checkoutBook(library.getMember(1), "The Catcher in the Rye");
+        library.checkoutBook(library.getMember(1), "Book 3");
         System.out.println(library.getMember(1));
         System.out.println(library.getMember(1).getBooks());
-        library.returnBook(library.getMember(1), "The Catcher in the Rye");
+        library.returnBook(library.getMember(1), "Book 3");
         System.out.println(library.getMember(1).getBooks());
 
     }
