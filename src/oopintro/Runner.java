@@ -37,8 +37,8 @@ public class Runner {
 //        }
 
 
-        System.out.println(DigitAdder(12345));
-        System.out.println(IntToString(12));
+        System.out.println(DigitAdder(74));
+        System.out.println(IntToString(74));
 
 
     }
