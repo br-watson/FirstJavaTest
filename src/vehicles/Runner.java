@@ -7,16 +7,29 @@ public class Runner {
         Motorbike m = new Motorbike(2, "Honda", 2, 0, false);
         Plane p = new Plane(6, "Boeing", 150, 4, false);
 
-        System.out.println(c);
-        System.out.println(m);
-        System.out.println(p);
+//        System.out.println(c);
+//        System.out.println(m);
+//        System.out.println(p);
+//
+//        c.setBrandName("BMW");
+//        m.setHasSidecar(true);
+//        p.setNoOfSeats(200);
+//
+//        System.out.println("\n\n" + c);
+//        System.out.println(m);
+//        System.out.println(p);
 
-        c.setBrandName("BMW");
-        m.setHasSidecar(true);
-        p.setNoOfSeats(200);
+        Garage garage = new Garage();
+        garage.addVehicle(c);
+        garage.addVehicle(m);
+        garage.addVehicle(p);
+//        System.out.println(garage.toString());
+//        garage.emptyGarage();
+        System.out.println(garage.toString());
+        garage.removeVehicle(m);
+        System.out.println(garage.toString());
+        garage.removeVehicleByID(2);
+        System.out.println(garage.toString());
 
-        System.out.println("\n\n" + c);
-        System.out.println(m);
-        System.out.println(p);
     }
 }

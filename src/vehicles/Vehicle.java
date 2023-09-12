@@ -5,19 +5,24 @@ public class Vehicle {
     private String brandName;
     private int noOfSeats;
     private int noOfDoors;
+    private static int count;
+    private int id;
 
     public Vehicle(int noOfWheels, String brandName, int noOfSeats, int noOfDoors) {
         setBrandName(brandName);
         setNoOfWheels(noOfWheels);
         setNoOfSeats(noOfSeats);
         setNoOfDoors(noOfDoors);
+        id = count;
+        count++;
     }
 
     public String toString() {
         return "noOfWheels=" + noOfWheels +
                 ", brandName='" + brandName + '\'' +
                 ", noOfSeats=" + noOfSeats +
-                ", noOfDoors=" + noOfDoors + ", ";
+                ", noOfDoors=" + noOfDoors +
+                ", ID=" + id + ", ";
     }
 
     public int getNoOfWheels() {
@@ -50,5 +55,13 @@ public class Vehicle {
 
     public void setNoOfDoors(int noOfDoors) {
         this.noOfDoors = noOfDoors;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
