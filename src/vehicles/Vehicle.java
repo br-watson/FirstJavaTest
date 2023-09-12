@@ -2,12 +2,12 @@ package vehicles;
 
 public class Vehicle {
     private int noOfWheels;
-    private String name;
+    private String brandName;
     private int noOfSeats;
     private int noOfDoors;
 
-    public Vehicle(int noOfWheels, String name, int noOfSeats, int noOfDoors) {
-        setName(name);
+    public Vehicle(int noOfWheels, String brandName, int noOfSeats, int noOfDoors) {
+        setBrandName(brandName);
         setNoOfWheels(noOfWheels);
         setNoOfSeats(noOfSeats);
         setNoOfDoors(noOfDoors);
@@ -15,7 +15,7 @@ public class Vehicle {
 
     public String toString() {
         return "noOfWheels=" + noOfWheels +
-                ", name='" + name + '\'' +
+                ", name='" + brandName + '\'' +
                 ", noOfSeats=" + noOfSeats +
                 ", noOfDoors=" + noOfDoors + ", ";
     }
@@ -28,12 +28,12 @@ public class Vehicle {
         this.noOfWheels = noOfWheels;
     }
 
-    public String getName() {
-        return name;
+    public String getBrandName() {
+        return brandName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
     }
 
     public int getNoOfSeats() {

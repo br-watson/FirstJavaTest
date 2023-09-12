@@ -11,7 +11,7 @@ public class Runner {
         System.out.println(m);
         System.out.println(p);
 
-        c.setName("BMW");
+        c.setBrandName("BMW");
         m.setHasSidecar(true);
         p.setNoOfSeats(200);
 

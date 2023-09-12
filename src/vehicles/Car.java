@@ -3,8 +3,8 @@ package vehicles;
 public class Car extends Vehicle {
     private boolean convertible;
 
-    public Car(int noOfWheels, String name, int noOfSeats, int noOfDoors) {
-        super(noOfWheels, name, noOfSeats, noOfDoors);
+    public Car(int noOfWheels, String brandName, int noOfSeats, int noOfDoors) {
+        super(noOfWheels, brandName, noOfSeats, noOfDoors);
     }
 
     public Car(int noOfWheels, String name, int noOfSeats, int noOfDoors, boolean convertible) {

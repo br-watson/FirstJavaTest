@@ -3,8 +3,8 @@ package vehicles;
 public class Motorbike extends Vehicle {
     private boolean hasSidecar;
 
-    public Motorbike(int noOfWheels, String name, int noOfSeats, int noOfDoors) {
-        super(noOfWheels, name, noOfSeats, noOfDoors);
+    public Motorbike(int noOfWheels, String brandName, int noOfSeats, int noOfDoors) {
+        super(noOfWheels, brandName, noOfSeats, noOfDoors);
     }
 
     public Motorbike(int noOfWheels, String name, int noOfSeats, int noOfDoors, boolean hasSidecar) {
