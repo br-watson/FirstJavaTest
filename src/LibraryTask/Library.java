@@ -87,9 +87,7 @@ public class Library {
 
     public void returnBook(LibraryMember member, String title) {
         Book book = getBook(title);
-        if (book == null)
-            System.out.println("Invalid title.");
-        else {
+        if (book != null) {
             if (!book.isCheckedOut()) {
                 System.out.println("Book is not checked out");
             } else {
