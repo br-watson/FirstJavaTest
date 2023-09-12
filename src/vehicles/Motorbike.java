@@ -27,4 +27,8 @@ public class Motorbike extends Vehicle {
     public void setHasSidecar(boolean hasSidecar) {
         this.hasSidecar = hasSidecar;
     }
+
+    public double calculateBill() {
+        return 10d;
+    }
 }

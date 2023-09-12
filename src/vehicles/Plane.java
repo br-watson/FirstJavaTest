@@ -28,4 +28,8 @@ public class Plane extends Vehicle {
     public void setHasPropellor(boolean hasPropellor) {
         this.hasPropellor = hasPropellor;
     }
+
+    public double calculateBill() {
+        return 1000000d;
+    }
 }

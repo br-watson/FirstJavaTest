@@ -28,5 +28,9 @@ public class Car extends Vehicle {
         this.convertible = convertible;
     }
 
+    public double calculateBill() {
+        return 1000d;
+    }
+
 
 }

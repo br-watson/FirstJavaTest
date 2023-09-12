@@ -38,15 +38,23 @@ public class Garage {
         vehicles.removeIf(vehicle -> vehicle.getId() == id);
     }
 
+//    public double calculateTotalBill() {
+//        double total = 0d;
+//        for (Vehicle vehicle : vehicles) {
+//            if (vehicle instanceof Car)
+//                total += 1000d;
+//            else if (vehicle instanceof Plane)
+//                total += 1000000d;
+//            else
+//                total += 10d;
+//        }
+//        return total;
+//    }
+
     public double calculateTotalBill() {
         double total = 0d;
         for (Vehicle vehicle : vehicles) {
-            if (vehicle instanceof Car)
-                total += 1000d;
-            else if (vehicle instanceof Plane)
-                total += 1000000d;
-            else
-                total += 10d;
+            total += vehicle.calculateBill();
         }
         return total;
     }

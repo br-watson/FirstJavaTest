@@ -1,6 +1,6 @@
 package vehicles;
 
-public class Vehicle {
+public abstract class Vehicle {
     private int noOfWheels;
     private String brandName;
     private int noOfSeats;
@@ -64,4 +64,6 @@ public class Vehicle {
     public void setId(int id) {
         this.id = id;
     }
+
+    public abstract double calculateBill();
 }
