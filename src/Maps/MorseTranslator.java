@@ -47,9 +47,7 @@ public class MorseTranslator {
     }
 
     public String translate(String input) {
-        String[] words = input.split("/");
-        for (int i = 0; i < words.length; i++)
-            words[i] = words[i].trim();
+        String[] words = input.split(" / ");
         StringBuilder translated = new StringBuilder();
         for (String word : words) {
             String[] letters = word.split(" ");
