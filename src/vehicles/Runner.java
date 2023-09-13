@@ -38,5 +38,10 @@ public class Runner {
         garage.removeVehiclesByType("Plane");
         System.out.println(garage.toString());
 
+        p.fly();
+
+        BirdFlyable b = new BirdFlyable();
+        b.fly();
+
     }
 }

@@ -1,6 +1,6 @@
 package vehicles;
 
-public class Plane extends Vehicle {
+public class Plane extends Vehicle implements Flyable {
     public boolean hasPropellor;
 
 
@@ -31,5 +31,10 @@ public class Plane extends Vehicle {
 
     public double calculateBill() {
         return 1000000d;
+    }
+
+    public void fly() {
+        System.out.println("       __|__\n" +
+                "--@--@--(_)--@--@--");
     }
 }
