@@ -6,9 +6,8 @@ public class Game {
     private Random rand = new Random();
 
     public String RPSGame(RPS input) {
-        Boolean result = null;
-        int num = rand.nextInt(3);
-        RPS computer = RPS.values()[num];
+        boolean result = false;
+        RPS computer = RPS.values()[rand.nextInt(3)];
         if (input != computer) {
             switch (input) {
                 case ROCK:
@@ -20,10 +19,9 @@ public class Game {
                 case SCISSORS:
                     result = computer != RPS.ROCK;
             }
-        }
-        if (result == null)
+        } else
             return "Tie. :|";
-        else if (result)
+        if (result)
             return "You Win! :)";
         else
             return "You Lose :(";
