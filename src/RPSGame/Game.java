@@ -3,7 +3,7 @@ package RPSGame;
 import java.util.Random;
 
 public class Game {
-    private Random rand = new Random();
+    private final Random rand = new Random();
 
     public String RPSGame(RPS input) {
         boolean result = false;
