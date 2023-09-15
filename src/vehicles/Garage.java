@@ -60,11 +60,25 @@ public class Garage {
                             addVehicle(new Car(noOfWheels, brandName, noOfSeats, noOfDoors, conv));
                             break;
                         case 2:
-                            Vehicle motorbike = new Motorbike(noOfWheels, brandName, noOfSeats, noOfDoors);
+                            boolean sidecar;
+                            System.out.print("Does the motorbike have a sidecar? (y/n): ");
+                            String sidecarString = scanner.next();
+                            if (sidecarString.equals("y"))
+                                sidecar = true;
+                            else
+                                sidecar = false;
+                            Vehicle motorbike = new Motorbike(noOfWheels, brandName, noOfSeats, noOfDoors, sidecar);
                             addVehicle(motorbike);
                             break;
                         case 3:
-                            Vehicle plane = new Plane(noOfWheels, brandName, noOfSeats, noOfDoors);
+                            boolean prop;
+                            System.out.print("Does the plane have a propellor? (y/n): ");
+                            String propellor = scanner.next();
+                            if (propellor.equals("y"))
+                                prop = true;
+                            else
+                                prop = false;
+                            Vehicle plane = new Plane(noOfWheels, brandName, noOfSeats, noOfDoors, prop);
                             addVehicle(plane);
                             break;
                     }
