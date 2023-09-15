@@ -53,20 +53,14 @@ public class Garage {
                             boolean conv;
                             System.out.print("Convertible? (y/n): ");
                             String convertible = scanner.next();
-                            if (convertible.equals("y"))
-                                conv = true;
-                            else
-                                conv = false;
+                            conv = convertible.equals("y");
                             addVehicle(new Car(noOfWheels, brandName, noOfSeats, noOfDoors, conv));
                             break;
                         case 2:
                             boolean sidecar;
                             System.out.print("Does the motorbike have a sidecar? (y/n): ");
                             String sidecarString = scanner.next();
-                            if (sidecarString.equals("y"))
-                                sidecar = true;
-                            else
-                                sidecar = false;
+                            sidecar = sidecarString.equals("y");
                             Vehicle motorbike = new Motorbike(noOfWheels, brandName, noOfSeats, noOfDoors, sidecar);
                             addVehicle(motorbike);
                             break;
@@ -74,10 +68,7 @@ public class Garage {
                             boolean prop;
                             System.out.print("Does the plane have a propellor? (y/n): ");
                             String propellor = scanner.next();
-                            if (propellor.equals("y"))
-                                prop = true;
-                            else
-                                prop = false;
+                            prop = propellor.equals("y");
                             Vehicle plane = new Plane(noOfWheels, brandName, noOfSeats, noOfDoors, prop);
                             addVehicle(plane);
                             break;
